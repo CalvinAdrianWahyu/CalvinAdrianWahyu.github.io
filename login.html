@@ -81,5 +81,11 @@
 
 
     <!-- Script JS -->
-    <script src="components/js/loader.js"></script>
+    <script>
+        // Loader JS
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        });
+    </script>
 </body>

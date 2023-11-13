@@ -142,3 +142,10 @@ body {
     transform: translateX(var(--end));
   }
 }
+
+footer {
+ color: 'white';
+ align-items: center;
+ justify-content: center;
+ display: flex;
+}

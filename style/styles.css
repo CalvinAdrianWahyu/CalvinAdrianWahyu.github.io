@@ -11,10 +11,32 @@ body {
     padding: 50px;
     align-items: center;
     justify-content: center;
-    color: white;
+    text-align: center;
 }
 
+.bayardulu h1 {
+  animation: colorChange 5s infinite;
+  transition: color 0.5s; 
+}
+
+@keyframes colorChange {
+  0% { color: rgb(255, 0, 0); }
+  25% { color: rgb(255, 255, 0); }
+  50% { color: rgb(0, 255, 0); }
+  75% { color: rgb(0, 255, 255); }
+  100% { color: rgb(255, 0, 255); }
+  75% { color: rgb(0, 255, 255); }
+  50% { color: rgb(0, 255, 0); }
+  25% { color: rgb(255, 255, 0); }
+  15% { color: rgb(0, 153, 255); }
+  15% { color: rgb(255, 255, 0); }
+  5% { color: rgb(255, 255, 0); }
+  5% { color: rgb(255, 0, 0); }
+}
+
+
 .fandyfr {
+  text-align: center;
     font-size: 26px;
     color: white;
     display: flex;
@@ -25,9 +47,11 @@ body {
 
 .gambar {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 60px;
-    size: 50%;
+    margin: 50px;
+    width: 300;
+    height: 200;
 }
 
 .btn-23,
@@ -100,6 +124,7 @@ body {
 }
 
 .btn-23 .marquee {
+  color: #adff2f;
   --spacing: 5em;
   --start: 0em;
   --end: 5em;
@@ -109,8 +134,8 @@ body {
   animation-play-state: paused;
   opacity: 0;
   position: relative;
-  text-shadow: #fff var(--spacing) 0, #fff calc(var(--spacing) * -1) 0,
-    #fff calc(var(--spacing) * -2) 0;
+  text-shadow: #adff2f var(--spacing) 0, #adff2f calc(var(--spacing) * -1) 0,
+  #adff2f calc(var(--spacing) * -2) 0;
 }
 
 .btn-23:hover .marquee {
@@ -142,10 +167,31 @@ body {
     transform: translateX(var(--end));
   }
 }
+main h1 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iklan {
+  flex-grow: 1; /* Mengisi ruang kosong di antara video dan teks */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.iklan video {
+  width: 100;
+  max-width: 600px;
+  height: auto;
+}
 
-footer {
- color: 'white';
- align-items: center;
- justify-content: center;
- display: flex;
+.minimalbuat {
+  position: fixed;
+  bottom: -15px;
+  width: 100%;
+  padding: 20px;
+  background-color: #00000091;
+  color: white;
+  text-align: center;
 }
